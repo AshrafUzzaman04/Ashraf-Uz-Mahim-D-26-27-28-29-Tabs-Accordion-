@@ -15,11 +15,11 @@ body {
   font-family: "Berkshire Swash", cursive;
   position: relative;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.3s;
   &:hover {
     background-color: rgb(198, 229, 255);
     border-radius: 8px 8px 0px 0px;
-    transition: 0.5s;
+    transition: 0.3s;
   }
   &::before {
     content: "+";
@@ -33,24 +33,23 @@ body {
     font-size: 32px;
     font-weight: bold;
     padding: 0 10px;
-    transition: 0.5s;
+    transition: 0.3s;
   }
 }
 .details {
-  border-top: 2px solid #31485e;
   max-height: 0;
   overflow: hidden;
   font-family: "Josefin Sans", sans-serif;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .active {
   background-color: rgb(198, 229, 255);
   border-radius: 8px 8px 0px 0px;
-  transition: 0.5s;
+  transition: 0.3s;
   &::before {
     content: "+";
     transform: rotate(45deg);
-    transition: 0.5s;
+    transition: 0.3s;
   }
 }
