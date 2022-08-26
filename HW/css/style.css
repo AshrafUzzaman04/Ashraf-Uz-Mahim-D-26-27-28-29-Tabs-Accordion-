@@ -100,7 +100,10 @@ body {
     border-right: none;
     border-bottom: 2px solid rgb(0, 89, 255);
   }
-  .letter::before {
+  .letterBefore::before,
+.smsBefore::before,
+.phoneBefore::before,
+.smartphoneBefore::before {
     display: none;
   }
 }

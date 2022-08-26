@@ -93,26 +93,38 @@ body {
   margin-top: 120px;
   transition: 0.3s;
 }
+
+// responsive code >>>>>>>>>>>>>>>>
+
 @media only screen and (max-width: 992px) {
   .bordeWidthEnd {
     border-right: none;
     border-bottom: 2px solid rgb(0, 89, 255);
   }
-  .letter {
+  .letterBefore,
+  .smsBefore,
+  .phoneBefore,
+  .smartphoneBefore {
     &::before {
       display: none;
     }
   }
 }
+
+// mixin >>>>>>>>>>>>>>>>>
+
+@mixin hellow {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-color: #31485e;
+  transform: rotate(45deg);
+}
 .letterBefore {
   position: relative;
   &::before {
-    content: "";
-    position: absolute;
-    width: 23px;
-    height: 23px;
-    background-color: #31485e;
-    transform: rotate(45deg);
+    @include hellow();
     top: -36px;
     left: 10%;
   }
@@ -120,12 +132,7 @@ body {
 .smsBefore {
   position: relative;
   &::before {
-    content: "";
-    position: absolute;
-    width: 23px;
-    height: 23px;
-    background-color: #31485e;
-    transform: rotate(45deg);
+    @include hellow();
     top: -36px;
     left: 36%;
   }
@@ -133,12 +140,7 @@ body {
 .phoneBefore {
   position: relative;
   &::before {
-    content: "";
-    position: absolute;
-    width: 23px;
-    height: 23px;
-    background-color: #31485e;
-    transform: rotate(45deg);
+    @include hellow();
     top: -36px;
     left: 62%;
   }
@@ -146,12 +148,7 @@ body {
 .smartphoneBefore {
   position: relative;
   &::before {
-    content: "";
-    position: absolute;
-    width: 23px;
-    height: 23px;
-    background-color: #31485e;
-    transform: rotate(45deg);
+    @include hellow();
     top: -36px;
     left: 88%;
   }

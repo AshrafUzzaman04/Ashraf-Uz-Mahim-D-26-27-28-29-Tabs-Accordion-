@@ -1,4 +1,4 @@
-// accordion js coding
+// accordion js coding >>>>>>>>>>>>>>>>>>
 
 const header = document.querySelectorAll(".header");
 const details = document.querySelectorAll(".details");
@@ -22,7 +22,7 @@ for (let i = 0; i < header.length; i++) {
   });
 }
 
-// tabs js coding started here
+// tabs js coding started here >>>>>>>>>>>>>>>>>>
 
 const tabManuBtn = document.querySelectorAll(".tabManuBtn");
 const tabsDetails = document.querySelectorAll(".tabsDetails");
