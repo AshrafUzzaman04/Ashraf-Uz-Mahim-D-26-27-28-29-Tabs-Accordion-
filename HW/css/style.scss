@@ -4,7 +4,7 @@
 
 body {
   background-color: #31485e;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: arial;
 }
 .fontFamily {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -51,5 +51,108 @@ body {
     content: "+";
     transform: rotate(45deg);
     transition: 0.3s;
+  }
+}
+
+// tabs css coding started here-->>>>>>>>>
+
+.textStyle {
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    background-color: rgb(206, 232, 255);
+    > .textManuColor {
+      color: rgb(0, 89, 255);
+    }
+  }
+}
+.textManuColor {
+  color: rgb(94, 94, 94);
+}
+.detailsFullDiv {
+  .tabsDetails {
+    font-family: "Josefin Sans", sans-serif;
+    transition: 0.3s;
+  }
+}
+
+.activeTab {
+  background-color: rgb(206, 232, 255);
+  transition: 0.3s;
+  > .textManuColor {
+    color: rgb(0, 89, 255);
+    transition: 0.3s;
+  }
+}
+
+.bordeWidthEnd {
+  border-right: 2px solid rgb(0, 34, 146);
+}
+.tabsAllDiv {
+  margin-top: 120px;
+  transition: 0.3s;
+}
+@media only screen and (max-width: 992px) {
+  .bordeWidthEnd {
+    border-right: none;
+    border-bottom: 2px solid rgb(0, 89, 255);
+  }
+  .letter {
+    &::before {
+      display: none;
+    }
+  }
+}
+.letterBefore {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background-color: #31485e;
+    transform: rotate(45deg);
+    top: -36px;
+    left: 10%;
+  }
+}
+.smsBefore {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background-color: #31485e;
+    transform: rotate(45deg);
+    top: -36px;
+    left: 36%;
+  }
+}
+.phoneBefore {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background-color: #31485e;
+    transform: rotate(45deg);
+    top: -36px;
+    left: 62%;
+  }
+}
+.smartphoneBefore {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background-color: #31485e;
+    transform: rotate(45deg);
+    top: -36px;
+    left: 88%;
   }
 }

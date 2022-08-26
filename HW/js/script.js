@@ -21,3 +21,22 @@ for (let i = 0; i < header.length; i++) {
     }
   });
 }
+
+// tabs js coding started here
+
+const tabManuBtn = document.querySelectorAll(".tabManuBtn");
+const tabsDetails = document.querySelectorAll(".tabsDetails");
+
+for (let i = 0; i < tabManuBtn.length; i++) {
+  tabManuBtn[i].addEventListener("click", () => {
+    for (let j = 0; j < tabManuBtn.length; j++) {
+      if (i === j) {
+        tabManuBtn[j].classList.add("activeTab");
+        tabsDetails[j].classList.remove("d-none");
+      } else {
+        tabManuBtn[j].classList.remove("activeTab");
+        tabsDetails[j].classList.add("d-none");
+      }
+    }
+  });
+}

@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 body {
   background-color: #31485e;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: arial;
 }
 
 .fontFamily {
@@ -54,4 +54,108 @@ body {
   content: "+";
   transform: rotate(45deg);
   transition: 0.3s;
+}
+
+.textStyle {
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.textStyle:hover {
+  background-color: rgb(206, 232, 255);
+}
+.textStyle:hover > .textManuColor {
+  color: rgb(0, 89, 255);
+}
+
+.textManuColor {
+  color: rgb(94, 94, 94);
+}
+
+.detailsFullDiv .tabsDetails {
+  font-family: "Josefin Sans", sans-serif;
+  transition: 0.3s;
+}
+
+.activeTab {
+  background-color: rgb(206, 232, 255);
+  transition: 0.3s;
+}
+.activeTab > .textManuColor {
+  color: rgb(0, 89, 255);
+  transition: 0.3s;
+}
+
+.bordeWidthEnd {
+  border-right: 2px solid rgb(0, 34, 146);
+}
+
+.tabsAllDiv {
+  margin-top: 120px;
+  transition: 0.3s;
+}
+
+@media only screen and (max-width: 992px) {
+  .bordeWidthEnd {
+    border-right: none;
+    border-bottom: 2px solid rgb(0, 89, 255);
+  }
+  .letter::before {
+    display: none;
+  }
+}
+.letterBefore {
+  position: relative;
+}
+.letterBefore::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-color: #31485e;
+  transform: rotate(45deg);
+  top: -36px;
+  left: 10%;
+}
+
+.smsBefore {
+  position: relative;
+}
+.smsBefore::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-color: #31485e;
+  transform: rotate(45deg);
+  top: -36px;
+  left: 36%;
+}
+
+.phoneBefore {
+  position: relative;
+}
+.phoneBefore::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-color: #31485e;
+  transform: rotate(45deg);
+  top: -36px;
+  left: 62%;
+}
+
+.smartphoneBefore {
+  position: relative;
+}
+.smartphoneBefore::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-color: #31485e;
+  transform: rotate(45deg);
+  top: -36px;
+  left: 88%;
 }/*# sourceMappingURL=style.css.map */
