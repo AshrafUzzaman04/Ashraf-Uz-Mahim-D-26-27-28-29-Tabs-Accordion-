@@ -113,8 +113,8 @@ body {
 .letterBefore::before {
   content: "";
   position: absolute;
-  width: 23px;
-  height: 23px;
+  width: 22px;
+  height: 22px;
   background-color: #31485e;
   transform: rotate(45deg);
   top: -36px;
@@ -127,8 +127,8 @@ body {
 .smsBefore::before {
   content: "";
   position: absolute;
-  width: 23px;
-  height: 23px;
+  width: 22px;
+  height: 22px;
   background-color: #31485e;
   transform: rotate(45deg);
   top: -36px;
@@ -141,8 +141,8 @@ body {
 .phoneBefore::before {
   content: "";
   position: absolute;
-  width: 23px;
-  height: 23px;
+  width: 22px;
+  height: 22px;
   background-color: #31485e;
   transform: rotate(45deg);
   top: -36px;
@@ -155,8 +155,8 @@ body {
 .smartphoneBefore::before {
   content: "";
   position: absolute;
-  width: 23px;
-  height: 23px;
+  width: 22px;
+  height: 22px;
   background-color: #31485e;
   transform: rotate(45deg);
   top: -36px;
